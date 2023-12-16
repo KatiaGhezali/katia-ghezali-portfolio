@@ -24,7 +24,7 @@ const HeroSection = () => {
   return (
     <div className="flex bg-gray-600 h-screen lg:bg-gradient-to-r from-gray-600 to-text-gray-200 ">
       <div className=" text-white ml-4 mt-56 md:mt-38 md:ml-12 lg:ml-20 lg:mt-48">
-        <p className="text-gray-400 lg:text-transparent">Hello, I am</p>
+        <p className="text-gray-400 lg:text-transparent">Hello I am</p>
         <motion.h1
           className="text-3xl mt-2 text-bold md:text-6xl lg:text-6xl lg:hover:text-[#00FF00]"
           variants={textVariants}
@@ -32,6 +32,7 @@ const HeroSection = () => {
           animate="animate"
         >
           <span>Hello, I am </span>
+
           <motion.span
             animate={{
               color: ["#b9b3b3", "#00FF00", "#b9b3b3", "#00FF00"],
@@ -45,7 +46,7 @@ const HeroSection = () => {
           A Full Stack Web Developer
         </motion.h2>
         <motion.h4 className="text-lg mt-2 md:text-xl text-gray-300 lg:text-2xl lg:mt-8">
-          Embracing Challenges, Crafting Solutions
+          Embracing Challenges Crafting Solutions
         </motion.h4>
         <div>
           <Link href="#">
