@@ -1,3 +1,5 @@
+/* eslint-disable */
+
 import Image from "next/image";
 import { motion } from "framer-motion";
 import Link from "next/link";
@@ -45,9 +47,11 @@ export default function Home() {
   // let xPercent = 0;
   // let direction = -1;
 
+
   // useEffect(() => {
   //   requestAnimationFrame(animation);
   // }, []);
+
 
   // const animation = () => {
   //   gsap.set(firstText.current, { xPercent: xPercent });
