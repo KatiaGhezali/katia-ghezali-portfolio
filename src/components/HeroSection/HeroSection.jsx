@@ -48,7 +48,7 @@ const HeroSection = () => {
           Embracing Challenges, Crafting Solutions
         </motion.h4>
         <div>
-          <Link href="#" className=" ">
+          <Link href="#">
             <button className="mt-8 mr-4 py-2 border-b border-b-[#00FF00] text-[#00FF00]  md:p-2 md:border-[#00FF00] md:border md:rounded-md lg:px-8 lg:text-lg hover:bg-[#46f346] hover:text-gray-600">
               Contact Me
             </button>

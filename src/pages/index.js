@@ -46,7 +46,7 @@ export default function Home() {
 
   useEffect(() => {
     requestAnimationFrame(animation);
-  }, []);
+  }, [animation]);
 
   const animation = () => {
     gsap.set(firstText.current, { xPercent: xPercent });
