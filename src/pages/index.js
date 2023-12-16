@@ -9,7 +9,6 @@ import {
   SlSocialInstagram,
 } from "react-icons/sl";
 import { useEffect, useRef } from "react";
-import HeroSection from "@/components/HeroSection/HeroSection";
 
 const textVariants = {
   initial: {
@@ -69,7 +68,6 @@ export default function Home() {
 
   return (
     <>
-      <HeroSection />
       {/* <Image
         className="h-full w-fit"
         src="/bg.png"
@@ -77,7 +75,7 @@ export default function Home() {
         height={100}
       ></Image> */}
 
-      {/* <motion.div
+      <motion.div
         className="flex flex-col justify-center items-center text-yellow-500  bg-black h-full min-h-screen "
         variants={textVariants}
         initial="initial"
@@ -167,7 +165,7 @@ export default function Home() {
             <SlSocialInstagram />
           </Link>
         </motion.div>
-      </motion.div> */}
+      </motion.div>
     </>
   );
 }
