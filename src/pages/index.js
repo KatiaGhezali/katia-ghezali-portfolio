@@ -12,6 +12,7 @@ import {
 } from "react-icons/sl";
 import { useEffect, useRef } from "react";
 import HeroSection from "@/components/HeroSection/HeroSection";
+import AboutMe from "@/components/AboutMe/AboutMe";
 
 // const textVariants = {
 //   initial: {
@@ -47,11 +48,9 @@ export default function Home() {
   // let xPercent = 0;
   // let direction = -1;
 
-
   // useEffect(() => {
   //   requestAnimationFrame(animation);
   // }, []);
-
 
   // const animation = () => {
   //   gsap.set(firstText.current, { xPercent: xPercent });
@@ -174,6 +173,7 @@ export default function Home() {
     */}
 
       <HeroSection />
+      <AboutMe />
     </>
   );
 }
