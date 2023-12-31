@@ -13,6 +13,7 @@ import {
 import { useEffect, useRef } from "react";
 import HeroSection from "@/components/HeroSection/HeroSection";
 import AboutMe from "@/components/AboutMe/AboutMe";
+import Navbar from "@/components/NavBar/NavBar";
 
 // const textVariants = {
 //   initial: {
@@ -171,7 +172,7 @@ export default function Home() {
         </motion.div>
       </motion.div>
     */}
-
+      <Navbar />
       <HeroSection />
       <AboutMe />
     </>
