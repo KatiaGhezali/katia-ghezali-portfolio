@@ -1,7 +1,7 @@
 /* eslint-disable react/no-unescaped-entities */
 
 import React from "react";
-import Image from "next/image";
+
 import { motion } from "framer-motion";
 
 const textVariants = {
@@ -26,7 +26,7 @@ const AboutMe = () => {
     <div className="flex bg-gray-600 px-4 h-screen lg:text-center  ">
       <motion.div variants={textVariants} initial="initial" animate="animate">
         <motion.h1
-          className="text-2xl font-bold text-[#00FF00] text-center items-center md:text-3xl lg:text-center lg:text-4xl  lg:p-2"
+          className="text-2xl mt-2 font-bold text-[#00FF00] text-center items-center md:mt-4 md:text-3xl lg:text-center lg:text-4xl  lg:p-2"
           variants={textVariants}
         >
           About Me
@@ -45,10 +45,6 @@ const AboutMe = () => {
           with loved ones.
         </motion.p>
       </motion.div>
-
-      {/* <div>
-        <Image className="mt-12" src="/bg.png" width={300} height={300}></Image>
-      </div> */}
     </div>
   );
 };
