@@ -14,6 +14,7 @@ import { useEffect, useRef } from "react";
 import HeroSection from "@/components/HeroSection/HeroSection";
 import AboutMe from "@/components/AboutMe/AboutMe";
 import Navbar from "@/components/NavBar/NavBar";
+import Technologies from "@/components/Technologies/Technologies";
 
 // const textVariants = {
 //   initial: {
@@ -175,6 +176,7 @@ export default function Home() {
       <Navbar />
       <HeroSection />
       <AboutMe />
+      <Technologies />
     </>
   );
 }
