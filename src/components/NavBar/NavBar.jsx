@@ -13,28 +13,34 @@ const Navbar = () => {
     {
       id: 1,
       link: "home",
+      l: "/",
     },
     {
       id: 2,
       link: "about",
+      l: "/",
     },
     {
       id: 3,
       link: "skills",
+      l: "/",
     },
     {
       id: 4,
       link: "projects",
+      l: "/",
     },
 
     {
       id: 5,
       link: "experience",
+      l: "./",
     },
 
     {
       id: 6,
       link: "contact",
+      l: "/",
     },
   ];
 
@@ -54,7 +60,7 @@ const Navbar = () => {
       </div>
 
       <ul className="hidden border-b border-b-[#00FF00] py-4 md:flex mx-auto">
-        {links.map(({ id, link }) => (
+        {links.map(({ id, link, l }) => (
           <li
             key={id}
             className={`nav-links px-4 cursor-pointer capitalize font-medium ${
@@ -64,7 +70,7 @@ const Navbar = () => {
                 : "text-gray-300"
             } hover:scale-105 hover:text-[#00FF00] duration-200 hover:underline link-underline`}
           >
-            <Link href={`/${link}`}>{link}</Link>
+            <Link href={`/${l}`}>{link}</Link>
           </li>
         ))}
       </ul>
