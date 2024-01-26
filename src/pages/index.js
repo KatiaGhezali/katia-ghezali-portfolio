@@ -1,3 +1,5 @@
+/* eslint-disable */
+
 import Image from "next/image";
 import { motion } from "framer-motion";
 import Link from "next/link";
@@ -9,62 +11,69 @@ import {
   SlSocialInstagram,
 } from "react-icons/sl";
 import { useEffect, useRef } from "react";
+import HeroSection from "@/components/HeroSection/HeroSection";
+import AboutMe from "@/components/AboutMe/AboutMe";
+import Navbar from "@/components/NavBar/NavBar";
+import Technologies from "@/components/Technologies/Technologies";
+import ProjectCard from "@/components/Projects/ProjectCard";
+import ProjectsData from "@/components/Projects/ProjectsData";
+import EmailSection from "@/components/ContactMe/EmailSection";
 
-const textVariants = {
-  initial: {
-    x: -500,
-    opacity: 0,
-  },
-  animate: {
-    x: 0,
-    opacity: 1,
-    transition: {
-      duration: 1,
-      stageChildren: 0.1,
-    },
-  },
-  hidden: { opacity: 0 },
-  visible: { opacity: 1 },
-};
+// const textVariants = {
+//   initial: {
+//     x: -500,
+//     opacity: 0,
+//   },
+//   animate: {
+//     x: 0,
+//     opacity: 1,
+//     transition: {
+//       duration: 1,
+//       stageChildren: 0.1,
+//     },
+//   },
+//   hidden: { opacity: 0 },
+//   visible: { opacity: 1 },
+// };
 
 export default function Home() {
-  const firstText = useRef(null);
-  const secondText = useRef(null);
-  const thirdText = useRef(null);
-  const fourthText = useRef(null);
-  const fifthText = useRef(null);
-  const sixthText = useRef(null);
-  const seventhText = useRef(null);
-  const eighthText = useRef(null);
-  const ninethText = useRef(null);
-  const eleventhText = useRef(null);
-  const tenthText = useRef(null);
-  const twelvthText = useRef(null);
+  // const firstText = useRef(null);
+  // const secondText = useRef(null);
+  // const thirdText = useRef(null);
+  // const fourthText = useRef(null);
+  // const fifthText = useRef(null);
+  // const sixthText = useRef(null);
+  // const seventhText = useRef(null);
+  // const eighthText = useRef(null);
+  // const ninethText = useRef(null);
+  // const eleventhText = useRef(null);
+  // const tenthText = useRef(null);
+  // const twelvthText = useRef(null);
 
-  let xPercent = 0;
-  let direction = -1;
+  // let xPercent = 0;
+  // let direction = -1;
 
-  useEffect(() => {
-    requestAnimationFrame(animation);
-  }, []);
+  // useEffect(() => {
+  //   requestAnimationFrame(animation);
+  // }, []);
 
-  const animation = () => {
-    gsap.set(firstText.current, { xPercent: xPercent });
-    gsap.set(secondText.current, { xPercent: xPercent });
-    gsap.set(thirdText.current, { xPercent: xPercent });
-    gsap.set(fourthText.current, { xPercent: xPercent });
-    gsap.set(fifthText.current, { xPercent: xPercent });
-    gsap.set(sixthText.current, { xPercent: xPercent });
-    gsap.set(seventhText.current, { xPercent: xPercent });
-    gsap.set(eighthText.current, { xPercent: xPercent });
-    gsap.set(ninethText.current, { xPercent: xPercent });
-    gsap.set(tenthText.current, { xPercent: xPercent });
-    gsap.set(twelvthText.current, { xPercent: xPercent });
-    gsap.set(eleventhText.current, { xPercent: xPercent });
+  // const animation = () => {
+  //   gsap.set(firstText.current, { xPercent: xPercent });
+  //   gsap.set(secondText.current, { xPercent: xPercent });
+  //   gsap.set(thirdText.current, { xPercent: xPercent });
+  //   gsap.set(fourthText.current, { xPercent: xPercent });
+  //   gsap.set(fifthText.current, { xPercent: xPercent });
+  //   gsap.set(sixthText.current, { xPercent: xPercent });
+  //   gsap.set(seventhText.current, { xPercent: xPercent });
+  //   gsap.set(eighthText.current, { xPercent: xPercent });
+  //   gsap.set(ninethText.current, { xPercent: xPercent });
+  //   gsap.set(tenthText.current, { xPercent: xPercent });
+  //   gsap.set(twelvthText.current, { xPercent: xPercent });
+  //   gsap.set(eleventhText.current, { xPercent: xPercent });
 
-    xPercent += 1 * direction;
-    requestAnimationFrame(animation);
-  };
+  //   xPercent += 1 * direction;
+  //   requestAnimationFrame(animation);
+  // };
 
   return (
     <>
@@ -75,7 +84,7 @@ export default function Home() {
         height={100}
       ></Image> */}
 
-      <motion.div
+      {/* <motion.div
         className="flex flex-col justify-center items-center text-yellow-500  bg-black h-full min-h-screen "
         variants={textVariants}
         initial="initial"
@@ -166,6 +175,14 @@ export default function Home() {
           </Link>
         </motion.div>
       </motion.div>
+    */}
+      <Navbar />
+      <HeroSection />
+      <AboutMe />
+      <Technologies />
+
+      <ProjectsData />
+      <EmailSection />
     </>
   );
 }
