@@ -24,7 +24,7 @@ const textVariants = {
 
 const HeroSection = () => {
   return (
-    <div className="flex bg-gray-600 h-screen lg:bg-gradient-to-r from-gray-600 to-gray-200 ">
+    <div className="flex bg-gray-600 h-screen lg:bg-gradient-to-r from-black-600 to-black-200 ">
       <div className=" text-white ml-4 mt-56 md:mt-38 md:ml-12 lg:ml-20 lg:mt-48">
         <p className="text-gray-400 lg:text-transparent">Hello, I&apos;m</p>
         <motion.h1
