@@ -15,6 +15,8 @@ import HeroSection from "@/components/HeroSection/HeroSection";
 import AboutMe from "@/components/AboutMe/AboutMe";
 import Navbar from "@/components/NavBar/NavBar";
 import Technologies from "@/components/Technologies/Technologies";
+import ProjectCard from "@/components/Projects/ProjectCard";
+import ProjectsData from "@/components/Projects/ProjectsData";
 
 // const textVariants = {
 //   initial: {
@@ -177,6 +179,8 @@ export default function Home() {
       <HeroSection />
       <AboutMe />
       <Technologies />
+
+      <ProjectsData />
     </>
   );
 }
