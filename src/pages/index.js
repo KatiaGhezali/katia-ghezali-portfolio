@@ -17,6 +17,7 @@ import Navbar from "@/components/NavBar/NavBar";
 import Technologies from "@/components/Technologies/Technologies";
 import ProjectCard from "@/components/Projects/ProjectCard";
 import ProjectsData from "@/components/Projects/ProjectsData";
+import EmailSection from "@/components/ContactMe/EmailSection";
 
 // const textVariants = {
 //   initial: {
@@ -181,6 +182,7 @@ export default function Home() {
       <Technologies />
 
       <ProjectsData />
+      <EmailSection />
     </>
   );
 }
