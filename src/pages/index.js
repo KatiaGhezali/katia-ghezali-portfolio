@@ -18,6 +18,7 @@ import Technologies from "@/components/Technologies/Technologies";
 import ProjectCard from "@/components/Projects/ProjectCard";
 import ProjectsData from "@/components/Projects/ProjectsData";
 import EmailSection from "@/components/ContactMe/EmailSection";
+import Education from "@/components/Education/Education";
 
 // const textVariants = {
 //   initial: {
@@ -183,6 +184,7 @@ export default function Home() {
         <Technologies />
 
         <ProjectsData />
+        <Education />
         <EmailSection />
       </div>
     </>
