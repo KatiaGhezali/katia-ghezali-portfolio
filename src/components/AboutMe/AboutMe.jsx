@@ -23,7 +23,7 @@ const textVariants = {
 
 const AboutMe = () => {
   return (
-    <div className="flex bg-gray-600 px-4 h-screen lg:text-center  ">
+    <div className="flex  px-4 h-screen lg:text-center  ">
       <motion.div variants={textVariants} initial="initial" animate="animate">
         <motion.h1
           className="text-2xl mt-2 font-bold text-[#00FF00] text-center items-center md:mt-4 md:text-3xl lg:text-center lg:text-4xl  lg:p-2"

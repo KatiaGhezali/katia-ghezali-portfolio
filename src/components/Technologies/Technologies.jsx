@@ -3,7 +3,7 @@ import skills from "./technologiesData";
 
 const Technologies = () => {
   return (
-    <div className="bg-gray-600">
+    <div className="lg:mb-72">
       <h1 className="text-2xl font-bold text-[#00FF00] text-center items-center md:text-4xl lg:mb-8">
         My Skills
       </h1>

@@ -9,7 +9,7 @@ const EmailSection = () => {
   };
 
   return (
-    <div className="bg-gray-600 p-20 text-2xl text-center text-white">
+    <div className=" p-20 text-2xl text-center text-white">
       <motion.h1
         initial="hidden"
         animate="visible"

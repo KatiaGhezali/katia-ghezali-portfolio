@@ -24,7 +24,7 @@ const textVariants = {
 
 const HeroSection = () => {
   return (
-    <div className="flex bg-gray-600 h-screen lg:bg-gradient-to-r from-black-600 to-black-200 ">
+    <div className="flex  h-screen lg:bg-gradient-to-r from-black to-gray-800 ">
       <div className=" text-white ml-4 mt-56 md:mt-38 md:ml-12 lg:ml-20 lg:mt-48">
         <p className="text-gray-400 lg:text-transparent">Hello, I&apos;m</p>
         <motion.h1
@@ -55,8 +55,8 @@ const HeroSection = () => {
               Contact Me
             </button>
           </Link>
-          <Link href="#" className="mt-8  hover:bg-gray-600">
-            <button className="mt-8 py-2 border-b border-b-[#00FF00] text-[#00FF00] inline-flex md:ml-4 lg:text-lg lg:text-gray-600 lg:bg-[#46f346] lg:px-8 hover:border hover:border-[#00FF00] lg:rounded-md hover:text-[#00FF00] hover:bg-gray-600">
+          <Link href="#" className="mt-8  ">
+            <button className="mt-8 py-2 border-b border-b-[#00FF00] text-[#00FF00] inline-flex md:ml-4 lg:text-lg lg:text-gray-600 lg:bg-[#46f346] lg:px-8 hover:border hover:border-[#00FF00] lg:rounded-md hover:text-[#00FF00] hover:bg-black">
               <span className="mr-1">Download CV </span> <RxOpenInNewWindow />
             </button>
           </Link>

@@ -176,13 +176,15 @@ export default function Home() {
         </motion.div>
       </motion.div>
     */}
-      <Navbar />
-      <HeroSection />
-      <AboutMe />
-      <Technologies />
+      <div className="bg-gradient-to-r from-black to-gray-800">
+        <Navbar />
+        <HeroSection />
+        <AboutMe />
+        <Technologies />
 
-      <ProjectsData />
-      <EmailSection />
+        <ProjectsData />
+        <EmailSection />
+      </div>
     </>
   );
 }
