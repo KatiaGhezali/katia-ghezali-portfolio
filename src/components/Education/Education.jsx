@@ -6,16 +6,16 @@ function Education() {
   return (
     <div className="text-white">
       <h1 className="text-[#00FF00] text-center text-2xl lg:text-4xl font-bold my-12">
-        Experience{" "}
+        My Experience{" "}
       </h1>
-      <ul className="timeline timeline-snap-icon max-md:timeline-compact timeline-vertical ml-8">
+      <ul className="timeline timeline-snap-icon max-md:timeline-compact timeline-vertical mx-8">
         <li>
           <div className="timeline-middle">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               viewBox="0 0 20 20"
               fill="currentColor"
-              className="h-5 w-5"
+              className="h-8 w-8"
             >
               <path
                 fillRule="evenodd"
@@ -46,7 +46,7 @@ function Education() {
               xmlns="http://www.w3.org/2000/svg"
               viewBox="0 0 20 20"
               fill="currentColor"
-              className="h-5 w-5"
+              className="h-8 w-8"
             >
               <path
                 fillRule="evenodd"
@@ -77,7 +77,7 @@ function Education() {
               xmlns="http://www.w3.org/2000/svg"
               viewBox="0 0 20 20"
               fill="currentColor"
-              className="h-5 w-5"
+              className="h-8 w-8"
             >
               <path
                 fillRule="evenodd"
@@ -107,7 +107,7 @@ function Education() {
               xmlns="http://www.w3.org/2000/svg"
               viewBox="0 0 20 20"
               fill="currentColor"
-              className="h-5 w-5"
+              className="h-8 w-8"
             >
               <path
                 fillRule="evenodd"
