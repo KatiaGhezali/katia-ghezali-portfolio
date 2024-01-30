@@ -2,62 +2,41 @@ import { motion } from "framer-motion";
 import { FaGithub, FaLinkedin } from "react-icons/fa";
 import Link from "next/link";
 
-const EmailSection = () => {
-  const textVariants = {
-    hidden: { opacity: 0 },
-    visible: { opacity: 1 },
-  };
-
+const ContactMe = () => {
   return (
-    <div className=" p-20 text-2xl text-center text-white">
-      <motion.h1
-        initial="hidden"
-        animate="visible"
-        variants={textVariants}
-        transition={{ duration: 6 }}
-      >
-        This website is still under construction. However, I am always looking
-        for new opportunities. So if you want to collab, ask about something, or
-        just say hi,
-        <motion.div
-          animate={{
-            color: ["#b9b3b3", "#00FF00", "#b9b3b3", "#00FF00"],
-          }}
-          transition={{ duration: 4, repeat: Infinity }}
-          className="font-bold text-"
-        >
-          Do not be a stranger!
-        </motion.div>
-        <div>Here is where you can reach out:</div>
-      </motion.h1>
-      <div className="flex justify-center items-center mt-4">
-        <Link
-          href="https://github.com/KatiaGhezali"
-          className="mx-4 hover:text-[#00FF00]"
-        >
-          <motion.div
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            transition={{ duration: 6 }}
+    <div className=" h-screen text-center mt-48 ">
+      <h1 className="text-center font-bold text-[#00FF00] m-8 text-2xl md:text-3xl">
+        Contact Me
+      </h1>
+      <input
+        type="text"
+        placeholder="Name"
+        className="input input-bordered input-sm w-full max-w-xs md:max-w-md md:input-md my-4"
+      />
+      <input
+        type="text"
+        placeholder="Email"
+        className="input input-bordered input-sm w-full max-w-xs mx-4 md:max-w-md md:input-md "
+      />
+      <textarea
+        placeholder="Message"
+        className="textarea textarea-bordered textarea-xs w-full max-w-xs h-[80px] my-4 md:max-w-md md:textarea-md md:h-[120px]"
+      ></textarea>
+      <div>
+        <button className="btn btn-xs sm:btn-sm md:btn-md lg:btn-lg rounded-3xl ">
+          Send
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 24 24"
+            fill="#00FF00"
+            className="w-6 h-6 hover:text-black"
           >
-            <FaGithub className="text-4xl" />
-          </motion.div>
-        </Link>
-        <Link
-          href="https://linkedin.com/in/KatiaGhezali"
-          className="mx-4 hover:text-[#00FF00]"
-        >
-          <motion.div
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            transition={{ duration: 6 }}
-          >
-            <FaLinkedin className="text-4xl" />
-          </motion.div>
-        </Link>
+            <path d="M3.478 2.404a.75.75 0 0 0-.926.941l2.432 7.905H13.5a.75.75 0 0 1 0 1.5H4.984l-2.432 7.905a.75.75 0 0 0 .926.94 60.519 60.519 0 0 0 18.445-8.986.75.75 0 0 0 0-1.218A60.517 60.517 0 0 0 3.478 2.404Z" />
+          </svg>
+        </button>
       </div>
     </div>
   );
 };
 
-export default EmailSection;
+export default ContactMe;
