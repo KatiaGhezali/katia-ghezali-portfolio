@@ -5,10 +5,10 @@ import React from "react";
 function Education() {
   return (
     <div className="text-white">
-      <h1 className="text-[#00FF00] text-center text-xl font-bold my-12">
+      <h1 className="text-[#00FF00] text-center text-2xl lg:text-4xl font-bold my-12">
         Experience{" "}
       </h1>
-      <ul className="timeline timeline-snap-icon max-md:timeline-compact timeline-vertical">
+      <ul className="timeline timeline-snap-icon max-md:timeline-compact timeline-vertical ml-8">
         <li>
           <div className="timeline-middle">
             <svg
@@ -30,6 +30,12 @@ function Education() {
               Web Development - Internship
             </div>
             <div className=" font-black">CodingAlpha </div>
+            During my internship at CodingAlpha, I immersed myself in the world
+            of web development. This hands-on experience allowed me to design
+            and implement responsive web pages using HTML, CSS, and JavaScript.
+            My focus was on ensuring optimal user experiences across various
+            devices, honing my skills in creating dynamic and interactive
+            interfaces.
           </div>
           <hr />
         </li>
@@ -55,6 +61,12 @@ function Education() {
               Front-End Web Developement - Bootcamp
             </div>
             <div className=" font-black">Re:Coded</div>
+            Participating in the Front-End Web Development Bootcamp at Re:Coded
+            was a transformative experience. Over five months, I delved into the
+            intricacies of front-end development, gaining valuable insights into
+            industry best practices. The bootcamp, with its project-based
+            learning approach, equipped me with the skills needed to create
+            engaging and user-friendly websites.
           </div>
           <hr />
         </li>
@@ -80,6 +92,11 @@ function Education() {
               Web Development - Internship
             </div>
             <div className=" font-black">Algerian Airlines</div>
+            My internship at Algerian Airlines was a significant stepping stone
+            in my professional journey. Working within a dynamic team, I had the
+            opportunity to apply my web development skills to real-world
+            projects. I contributed to the design and functionality of their HR
+            platform, gaining practical experience in the aviation industry.
           </div>
           <hr />
         </li>
@@ -105,6 +122,13 @@ function Education() {
               Computer Science - bachelor's degree
             </div>
             <div className=" font-black">University Of Algiers 1</div>
+            Pursuing a Bachelor's degree in Computer Science at the University
+            of Algiers 1 laid the foundation for my academic and technical
+            expertise. Over three years, I delved into various aspects of
+            computer science, gaining a comprehensive understanding of
+            algorithms, programming languages, and software development. This
+            educational journey has been instrumental in shaping my approach to
+            problem-solving and technology.
           </div>
           <hr />
         </li>
