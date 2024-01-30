@@ -1,6 +1,12 @@
 /* eslint-disable react/no-unescaped-entities */
 
 import React from "react";
+import { motion } from "framer-motion";
+
+const cardVariants = {
+  initial: { y: 50, opacity: 0 },
+  animate: { y: 0, opacity: 1 },
+};
 
 function Education() {
   return (
@@ -24,7 +30,13 @@ function Education() {
               />
             </svg>
           </div>
-          <div className="timeline-start md:text-end mb-10">
+          <motion.div
+            className="timeline-start md:text-end mb-10"
+            variants={cardVariants}
+            initial="initial"
+            animate="animate"
+            transition={{ duration: 0.3, delay: 0.4 }}
+          >
             <time className="font-mono italic">Oct 2023 - Jan 2024</time>
             <div className="text-lg font-black">
               Web Development - Internship
@@ -36,7 +48,7 @@ function Education() {
             My focus was on ensuring optimal user experiences across various
             devices, honing my skills in creating dynamic and interactive
             interfaces.
-          </div>
+          </motion.div>
           <hr />
         </li>
         <li>
@@ -55,7 +67,13 @@ function Education() {
               />
             </svg>
           </div>
-          <div className="timeline-end mb-10">
+          <motion.div
+            className="timeline-end mb-10"
+            variants={cardVariants}
+            initial="initial"
+            animate="animate"
+            transition={{ duration: 0.3, delay: 0.5 }}
+          >
             <time className="font-mono italic">Jun 2023 - Dec 2023</time>
             <div className="text-lg font-black">
               Front-End Web Developement - Bootcamp
@@ -67,7 +85,7 @@ function Education() {
             industry best practices. The bootcamp, with its project-based
             learning approach, equipped me with the skills needed to create
             engaging and user-friendly websites.
-          </div>
+          </motion.div>
           <hr />
         </li>
         <li>
@@ -86,7 +104,13 @@ function Education() {
               />
             </svg>
           </div>
-          <div className="timeline-start md:text-end mb-10">
+          <motion.div
+            className="timeline-start md:text-end mb-10"
+            variants={cardVariants}
+            initial="initial"
+            animate="animate"
+            transition={{ duration: 0.3, delay: 0.6 }}
+          >
             <time className="font-mono italic">Apr 2021 - Sep 2021</time>
             <div className="text-lg font-black">
               Web Development - Internship
@@ -97,7 +121,7 @@ function Education() {
             opportunity to apply my web development skills to real-world
             projects. I contributed to the design and functionality of their HR
             platform, gaining practical experience in the aviation industry.
-          </div>
+          </motion.div>
           <hr />
         </li>
         <li>
@@ -116,7 +140,13 @@ function Education() {
               />
             </svg>
           </div>
-          <div className="timeline-end mb-10">
+          <motion.div
+            className="timeline-end mb-10"
+            variants={cardVariants}
+            initial="initial"
+            animate="animate"
+            transition={{ duration: 0.3, delay: 0.7 }}
+          >
             <time className="font-mono italic">Sep 2017 - Sep 2021</time>
             <div className="text-lg font-black">
               Computer Science - bachelor's degree
@@ -129,7 +159,7 @@ function Education() {
             algorithms, programming languages, and software development. This
             educational journey has been instrumental in shaping my approach to
             problem-solving and technology.
-          </div>
+          </motion.div>
           <hr />
         </li>
       </ul>
