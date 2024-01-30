@@ -57,7 +57,7 @@ const projects = [
 
 const ProjectsData = () => {
   return (
-    <section id="projects">
+    <section>
       <h2 className="text-center text-2xl lg:text-4xl font-bold text-[#00FF00] pt-8 mb-8 md:mb-12">
         My Projects
       </h2>
