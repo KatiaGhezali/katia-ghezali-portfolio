@@ -19,6 +19,8 @@ import ProjectCard from "@/components/Projects/ProjectCard";
 import ProjectsData from "@/components/Projects/ProjectsData";
 import EmailSection from "@/components/ContactMe/EmailSection";
 import Education from "@/components/Education/Education";
+import { LuLinkedin } from "react-icons/lu";
+import { LuGithub } from "react-icons/lu";
 
 // const textVariants = {
 //   initial: {
@@ -186,6 +188,31 @@ export default function Home() {
         <ProjectsData />
         <Education />
         <EmailSection />
+        <div className="items-center text-center text-lg lg:text-2xl lg:border lg:border-[#00FF00] text-white lg:mx-36 lg:pb-4">
+          <h1 className="text-[#00FF00]">HI THERE</h1>
+          <p>
+            This website is still under construction, however I am always open
+            for opportunities !
+          </p>
+          <p>
+            So, if you want to get in touch, even if it is just to say hello{" "}
+          </p>
+          <p>You can find me here:</p>
+          <div className="flex justify-center">
+            <Link
+              className="flex hover:text-[#00FF00] m-4 text-4xl "
+              href="https://www.linkedin.com/in/katiaghezali/"
+            >
+              <LuLinkedin />
+            </Link>
+            <Link
+              className="flex hover:text-[#00FF00] m-4 text-4xl"
+              href="https://github.com/KatiaGhezali"
+            >
+              <LuGithub />
+            </Link>
+          </div>
+        </div>
       </div>
     </>
   );
