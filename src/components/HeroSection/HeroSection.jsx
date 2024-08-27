@@ -24,11 +24,11 @@ const textVariants = {
 
 const HeroSection = () => {
   return (
-    <div className="flex  h-screen lg:bg-gradient-to-r from-black to-gray-800 ">
-      <div className=" text-white ml-4 mt-56 md:mt-38 md:ml-12 lg:ml-20 lg:mt-48">
+    <div className="flex  h-screen lg:bg-[#121416] justify-center text-center ">
+      <div className=" text-white ml-4 mt-56 md:mt-38 md:ml-12 lg:ml-20 lg:mt-48 ">
         <p className="text-gray-400 lg:text-transparent">Hello, I&apos;m</p>
         <motion.h1
-          className="text-3xl mt-2 text-bold md:text-6xl lg:text-6xl lg:hover:text-[#00FF00]"
+          className="text-3xl mt-2 text-bold md:text-6xl lg:text-6xl "
           variants={textVariants}
           initial="initial"
           animate="animate"
@@ -36,27 +36,27 @@ const HeroSection = () => {
           <span>Hello, I&apos;m </span>
           <motion.span
             animate={{
-              color: ["#b9b3b3", "#00FF00", "#b9b3b3", "#00FF00"],
+              color: ["#b9b3b3", "#7764EA", "#b9b3b3", "#7764EA"],
             }}
             transition={{ duration: 4, repeat: Infinity }}
           >
             Katia Ghezali{" "}
           </motion.span>
         </motion.h1>
-        <motion.h2 className="text-xl mt-2 md:text-2xl lg:text-6xl lg:mt-8">
-          A Full Stack Web Developer
-        </motion.h2>
-        <motion.h4 className="text-lg mt-2 md:text-xl text-gray-300 lg:text-2xl lg:mt-8">
+        <motion.h1 className="text-xl mt-2 md:text-2xl lg:text-6xl lg:mt-8">
+          A <span className="text-[#7764EA]">Full Stack</span> Web Developer
+        </motion.h1>
+        <motion.h1 className=" mt-2 md:text-xl text-gray-300 lg:text-6xl lg:mt-8">
           Embracing Challenges, Crafting Solutions
-        </motion.h4>
+        </motion.h1>
         <div>
           <Link href="#" className=" ">
-            <button className="mt-8 mr-4 py-2 border-b border-b-[#00FF00] text-[#00FF00]  md:p-2 md:border-[#00FF00] md:border md:rounded-md lg:px-8 lg:text-lg hover:bg-[#46f346] hover:text-gray-600">
+            <button className="mt-8 mr-4 py-2 border-b border-b-[#7764EA] text-[#7764EA]  md:p-2 md:border-[#7764EA] md:border md:rounded-md lg:px-8 lg:text-lg hover:bg-[#7764EA] hover:text-[#121416]">
               Contact Me
             </button>
           </Link>
           <Link href="#" className="mt-8  ">
-            <button className="mt-8 py-2 border-b border-b-[#00FF00] text-[#00FF00] inline-flex md:ml-4 lg:text-lg lg:text-gray-600 lg:bg-[#46f346] lg:px-8 hover:border hover:border-[#00FF00] lg:rounded-md hover:text-[#00FF00] hover:bg-black">
+            <button className="mt-8 py-2 border-b border-b-[#7764EA] text-[#7764EA] inline-flex md:ml-4 lg:text-lg lg:text-[#121416] lg:bg-[#7764EA] lg:px-8 hover:border hover:border-[#7764EA] lg:rounded-md hover:text-[#7764EA] hover:bg-[#121416]">
               <span className="mr-1">Download CV </span> <RxOpenInNewWindow />
             </button>
           </Link>
