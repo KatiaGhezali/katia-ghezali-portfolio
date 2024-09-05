@@ -179,7 +179,7 @@ export default function Home() {
         </motion.div>
       </motion.div>
     */}
-      <div className="bg-gradient-to-r from-black to-gray-800">
+      <div className="bg-[#121416] px-8">
         <Navbar />
         <HeroSection />
         <AboutMe />

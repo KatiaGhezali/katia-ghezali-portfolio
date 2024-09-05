@@ -23,17 +23,17 @@ const textVariants = {
 
 const AboutMe = () => {
   return (
-    <div className="flex  px-4 h-screen lg:text-center  ">
+    <div className="flex  px-4 h-screen lg:text-center bg-[#121416] ">
       <motion.div variants={textVariants} initial="initial" animate="animate">
         <motion.h1
-          className="text-2xl mt-2 font-bold text-[#00FF00] text-center items-center md:mt-4 md:text-3xl lg:text-center lg:text-4xl  lg:p-2"
+          className="text-2xl mt-2 font-bold  text-[#7764EA] text-center items-center md:mt-4 md:text-3xl lg:text-center lg:text-4xl  lg:p-2"
           variants={textVariants}
         >
           About Me
         </motion.h1>
 
         <motion.p
-          className="text-white mt-2 md:text-xl lg:text-2xl    md:p-2 lg:p-4 lg:mx-8 lg:leading-10"
+          className="text-white mt-2 md:text-xl  lg:text-2xl border-2 border-[#7764EA] md:p-4 lg:p-12 lg:mx-8 lg:leading-10"
           variants={textVariants}
         >
           Hi there, I am Katia, a full-stack web Developer with a bachelor's
@@ -41,8 +41,8 @@ const AboutMe = () => {
           and software development as well as artificial intelligence. <br />{" "}
           Web development hasn't always been my goal, but once I started
           studying for my degree it was hard to keep me away from my computer.
-          br When I am not coding, I am working out, reading or spending time
-          with loved ones.
+          <br /> When I am not coding, I am working out, reading or spending
+          time with loved ones.
         </motion.p>
       </motion.div>
     </div>

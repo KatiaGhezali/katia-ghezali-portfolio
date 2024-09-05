@@ -24,11 +24,10 @@ const textVariants = {
 
 const HeroSection = () => {
   return (
-    <div className="flex  h-screen bg-[#121416] justify-center text-center ">
-      <div className=" text-white ml-4 mt-56 md:mt-38 md:ml-12 lg:ml-20 lg:mt-48 ">
-        <p className="text-gray-400 lg:text-transparent">Hello, I&apos;m</p>
+    <div className="flex md:mb-64 lg:h-screen bg-[#121416] justify-center text-center ">
+      <div className="  text-white ml-4 mt-56 md:mt-38  lg:ml-20 lg:mt-48 ">
         <motion.h1
-          className="text-3xl mt-2 text-bold md:text-6xl lg:text-6xl "
+          className="text-3xl mt-2 md:mb-10 text-bold md:text-6xl lg:text-6xl "
           variants={textVariants}
           initial="initial"
           animate="animate"
@@ -43,10 +42,10 @@ const HeroSection = () => {
             Katia Ghezali{" "}
           </motion.span>
         </motion.h1>
-        <motion.h1 className="text-xl mt-2 md:text-2xl lg:text-6xl lg:mt-8">
+        <motion.h1 className="text-3xl mt-2 md:text-6xl md:my-10 lg:text-6xl lg:mt-8">
           A <span className="text-[#7764EA]">Full Stack</span> Web Developer
         </motion.h1>
-        <motion.h1 className=" mt-2 md:text-xl text-gray-300 lg:text-6xl lg:mt-8">
+        <motion.h1 className=" mt-2 md:text-4xl md:my-10 text-gray-300 lg:text-6xl lg:mt-8">
           Embracing Challenges, Crafting Solutions
         </motion.h1>
         <div>

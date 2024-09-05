@@ -1,5 +1,6 @@
 /* eslint-disable react/no-unescaped-entities */
 
+import Image from "next/image";
 import Link from "next/link";
 import { useRouter } from "next/router";
 import React, { useState } from "react";
@@ -54,6 +55,8 @@ const Navbar = () => {
             target="_blank"
             rel="noreferrer"
           >
+            {/* <Image href="/logo.svg"></Image>
+            <img src="/logo.svg" alt="" /> */}
             {/* <span className="text-[#7764EA]">K</span>G */}
           </a>
         </h1>
