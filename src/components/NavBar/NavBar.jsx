@@ -45,7 +45,7 @@ const Navbar = () => {
   ];
 
   return (
-    <div className="flex justify-between items-center w-full h-20 px-4 text-white bg-transparent fixed nav ">
+    <div className="flex justify-between items-center w-full h-20 px-4 text-white bg-[#121416] fixed nav ">
       <div>
         <h1 className="text-5xl font-signature ml-2">
           <a
@@ -54,21 +54,16 @@ const Navbar = () => {
             target="_blank"
             rel="noreferrer"
           >
-            <span className="text-[#00FF00]">K</span>G
+            {/* <span className="text-[#7764EA]">K</span>G */}
           </a>
         </h1>
       </div>
 
-      <ul className="hidden border-b border-b-[#00FF00] py-4 md:flex mx-auto">
+      <ul className="hidden py-4 md:flex mx-auto">
         {links.map(({ id, link, l }) => (
           <li
             key={id}
-            className={`nav-links px-4 cursor-pointer capitalize font-medium ${
-              link === "home" &&
-              (router.pathname === `/${link}` || router.pathname === "/")
-                ? "text-[#00FF00] "
-                : "text-gray-300"
-            } hover:scale-105 hover:text-[#00FF00] duration-200 hover:underline link-underline`}
+            className={`nav-links px-4 cursor-pointer capitalize font-medium  hover:scale-105 hover:text-[#7764EA] duration-200 `}
           >
             <Link href={`/${l}`}>{link}</Link>
           </li>
@@ -77,20 +72,20 @@ const Navbar = () => {
 
       <div
         onClick={() => setNav(!nav)}
-        className="cursor-pointer pr-4 z-10 text-gray-500 md:hidden"
+        className="cursor-pointer pr-4 z-10 text-white md:hidden"
       >
         {nav ? <FaTimes size={30} /> : <FaBars size={30} />}
       </div>
 
       {nav && (
-        <ul className="flex flex-col justify-center items-center absolute top-0 left-0 w-full h-screen bg-gradient-to-b from-gray-800 to-black text-gray-500">
+        <ul className="flex flex-col justify-center items-center absolute top-0 left-0 w-full h-screen bg-[#121416] text-white">
           {links.map(({ id, link }) => (
             <li
               key={id}
               className={`px-4 cursor-pointer capitalize py-6 text-4xl" ${
                 link === "home" && router.pathname === "/"
-                  ? "text-[#00FF00]"
-                  : "text-gray-500"
+                  ? "text-[#7764EA] font-bold"
+                  : "text-white "
               }`}
             >
               <Link onClick={() => setNav(!nav)} href={link}>
