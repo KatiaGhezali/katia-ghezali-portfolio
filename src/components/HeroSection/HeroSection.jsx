@@ -42,7 +42,7 @@ const HeroSection = () => {
             Katia Ghezali{" "}
           </motion.span>
         </motion.h1>
-        <motion.h1 className="text-3xl mt-2 md:text-6xl md:my-10 lg:text-6xl lg:mt-8">
+        <motion.h1 className="text-3xl mt-2 md:text-5xl md:my-10 lg:text-6xl lg:mt-8">
           A <span className="text-[#7764EA]">Full Stack</span> Web Developer
         </motion.h1>
         <motion.h1 className=" mt-2 md:text-4xl md:my-10 text-gray-300 lg:text-6xl lg:mt-8">

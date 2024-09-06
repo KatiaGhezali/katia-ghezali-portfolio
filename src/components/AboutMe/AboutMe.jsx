@@ -23,7 +23,7 @@ const textVariants = {
 
 const AboutMe = () => {
   return (
-    <div className="flex  px-4 h-screen lg:text-center bg-[#121416] ">
+    <div className="flex  px-4 lg:h-screen lg:text-center bg-[#121416] ">
       <motion.div variants={textVariants} initial="initial" animate="animate">
         <motion.h1
           className="text-2xl mt-2 font-bold  text-[#7764EA] text-center items-center md:mt-4 md:text-3xl lg:text-center lg:text-4xl  lg:p-2"
@@ -33,7 +33,7 @@ const AboutMe = () => {
         </motion.h1>
 
         <motion.p
-          className="text-white mt-2 md:text-xl  lg:text-2xl border-2 border-[#7764EA] md:p-4 lg:p-12 lg:mx-8 lg:leading-10"
+          className="text-white mt-2 md:text-xl p-2 lg:text-2xl border-2 border-[#7764EA] md:p-8 lg:p-12 lg:mx-8 lg:leading-10"
           variants={textVariants}
         >
           Hi there, I am Katia, a full-stack web Developer with a bachelor's
