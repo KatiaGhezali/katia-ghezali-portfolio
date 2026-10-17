@@ -1,105 +1,108 @@
-/* eslint-disable react/no-unescaped-entities */
-
-import Image from "next/image";
+import { useState } from "react";
 import Link from "next/link";
 import { useRouter } from "next/router";
-import React, { useState } from "react";
 import { FaBars, FaTimes } from "react-icons/fa";
 
-const Navbar = () => {
+const links = [
+  { label: "Home", href: "/" },
+  { label: "About", href: "/#about" },
+  { label: "Skills", href: "/#skills" },
+  { label: "Projects", href: "/#projects" },
+  { label: "Experience", href: "/#experience" },
+  { label: "Contact", href: "/#contact" },
+];
+
+export default function Navbar() {
+  const [navOpen, setNavOpen] = useState(false);
   const router = useRouter();
-  const [nav, setNav] = useState(false);
 
-  const links = [
-    {
-      id: 1,
-      link: "home",
-      l: "/",
-    },
-    {
-      id: 2,
-      link: "about",
-      l: "/",
-    },
-    {
-      id: 3,
-      link: "skills",
-      l: "/",
-    },
-    {
-      id: 4,
-      link: "projects",
-      l: "/",
-    },
+  const isActive = (href) => {
+    if (href === "/") {
+      return router.pathname === "/";
+    }
 
-    {
-      id: 5,
-      link: "experience",
-      l: "./",
-    },
+    if (href.startsWith("/#")) {
+      return false;
+    }
 
-    {
-      id: 6,
-      link: "contact",
-      l: "/",
-    },
-  ];
+    return router.pathname === href;
+  };
 
   return (
-    <div className="flex justify-between items-center w-full h-20 px-4 text-white bg-[#121416] fixed nav ">
-      <div>
-        <h1 className="text-5xl font-signature ml-2">
-          <a
-            className="link-underline link-underline-black font-bold "
-            href=""
-            target="_blank"
-            rel="noreferrer"
-          >
-            {/* <Image href="/logo.svg"></Image>
-            <img src="/logo.svg" alt="" /> */}
-            {/* <span className="text-[#7764EA]">K</span>G */}
-          </a>
-        </h1>
-      </div>
+    <header className="fixed inset-x-0 top-0 z-50 px-4 pt-4">
+      <nav className="relative mx-auto flex max-w-7xl items-center justify-between rounded-2xl border border-white/10 bg-[#0c0b18]/80 px-5 py-4 text-white shadow-lg shadow-purple-950/10 backdrop-blur-xl md:px-8">
+        <Link
+          href="/"
+          onClick={() => setNavOpen(false)}
+          className="group flex items-center gap-3"
+          aria-label="Katia Ghezali - Home"
+        >
+          <span className="flex h-10 w-10 items-center justify-center rounded-xl border border-[#7764EA]/40 bg-[#7764EA]/10 font-bold text-[#a99cff] transition duration-300 group-hover:border-[#7764EA] group-hover:bg-[#7764EA]/20">
+            KG
+          </span>
 
-      <ul className="hidden py-4 md:flex mx-auto">
-        {links.map(({ id, link, l }) => (
-          <li
-            key={id}
-            className={`nav-links px-4 cursor-pointer capitalize font-medium  hover:scale-105 hover:text-[#7764EA] duration-200 `}
-          >
-            <Link href={`/${l}`}>{link}</Link>
-          </li>
-        ))}
-      </ul>
+          <span className="hidden text-sm font-semibold tracking-wide sm:block">
+            KATIA GHEZALI
+            <span className="mt-1 block text-xs font-normal tracking-widest text-gray-400">
+              SOFTWARE ENGINEER
+            </span>
+          </span>
+        </Link>
 
-      <div
-        onClick={() => setNav(!nav)}
-        className="cursor-pointer pr-4 z-10 text-white md:hidden"
-      >
-        {nav ? <FaTimes size={30} /> : <FaBars size={30} />}
-      </div>
-
-      {nav && (
-        <ul className="flex flex-col justify-center items-center absolute top-0 left-0 w-full h-screen bg-[#121416] text-white">
-          {links.map(({ id, link }) => (
-            <li
-              key={id}
-              className={`px-4 cursor-pointer capitalize py-6 text-4xl" ${
-                link === "home" && router.pathname === "/"
-                  ? "text-[#7764EA] font-bold"
-                  : "text-white "
-              }`}
-            >
-              <Link onClick={() => setNav(!nav)} href={link}>
-                {link}
+        <ul className="hidden items-center gap-1 lg:flex">
+          {links.map(({ label, href }) => (
+            <li key={label}>
+              <Link
+                href={href}
+                className={`relative block rounded-xl px-3 py-2 text-sm transition duration-300 ${
+                  isActive(href)
+                    ? "bg-[#7764EA]/15 text-[#b6aaff]"
+                    : "text-gray-300 hover:bg-white/5 hover:text-white"
+                }`}
+              >
+                {label}
+                {isActive(href) && (
+                  <span className="absolute inset-x-3 -bottom-px h-px bg-[#7764EA]" />
+                )}
               </Link>
             </li>
           ))}
         </ul>
-      )}
-    </div>
-  );
-};
 
-export default Navbar;
+        <button
+          type="button"
+          onClick={() => setNavOpen(!navOpen)}
+          className="rounded-lg border border-white/10 p-2 text-gray-200 transition hover:border-[#7764EA]/50 hover:text-[#b6aaff] lg:hidden"
+          aria-label={
+            navOpen ? "Close navigation menu" : "Open navigation menu"
+          }
+          aria-expanded={navOpen}
+        >
+          {navOpen ? <FaTimes size={20} /> : <FaBars size={20} />}
+        </button>
+
+        {navOpen && (
+          <div className="absolute left-0 right-0 top-[calc(100%+0.75rem)] rounded-2xl border border-white/10 bg-[#0c0b18]/95 p-3 shadow-2xl shadow-purple-950/30 backdrop-blur-xl lg:hidden">
+            <ul className="flex flex-col gap-1">
+              {links.map(({ label, href }) => (
+                <li key={label}>
+                  <Link
+                    href={href}
+                    onClick={() => setNavOpen(false)}
+                    className={`block rounded-xl px-4 py-3 transition ${
+                      isActive(href)
+                        ? "bg-[#7764EA]/15 text-[#b6aaff]"
+                        : "text-gray-300 hover:bg-white/5 hover:text-white"
+                    }`}
+                  >
+                    {label}
+                  </Link>
+                </li>
+              ))}
+            </ul>
+          </div>
+        )}
+      </nav>
+    </header>
+  );
+}

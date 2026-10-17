@@ -179,7 +179,7 @@ export default function Home() {
         </motion.div>
       </motion.div>
     */}
-      <div className="bg-[#121416] px-8">
+      <div className="min-h-screen overflow-x-hidden bg-[#0c0b18] text-white">
         <Navbar />
         <HeroSection />
         <AboutMe />
@@ -188,31 +188,6 @@ export default function Home() {
         <ProjectsData />
         <Education />
         <EmailSection />
-        <div className="items-center text-center text-lg lg:text-2xl lg:border lg:border-[#00FF00] text-white lg:mx-36 lg:pb-4">
-          <h1 className="text-[#00FF00]">HI THERE</h1>
-          <p>
-            This website is still under construction, however I am always open
-            for opportunities !
-          </p>
-          <p>
-            So, if you want to get in touch, even if it is just to say hello{" "}
-          </p>
-          <p>You can find me here:</p>
-          <div className="flex justify-center">
-            <Link
-              className="flex hover:text-[#00FF00] m-4 text-4xl "
-              href="https://www.linkedin.com/in/katiaghezali/"
-            >
-              <LuLinkedin />
-            </Link>
-            <Link
-              className="flex hover:text-[#00FF00] m-4 text-4xl"
-              href="https://github.com/KatiaGhezali"
-            >
-              <LuGithub />
-            </Link>
-          </div>
-        </div>
       </div>
     </>
   );
